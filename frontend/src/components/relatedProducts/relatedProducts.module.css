@@ -1,0 +1,14 @@
+.div h2 {
+    margin-bottom: 30px;
+    font-family: "Poppins";
+}
+
+.related_product h2 {
+    margin-bottom: 30px;
+}
+
+.related_products_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}

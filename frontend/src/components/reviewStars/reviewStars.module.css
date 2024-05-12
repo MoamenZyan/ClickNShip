@@ -1,0 +1,18 @@
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    margin: 10px 0px;
+}
+
+.stars i {
+    margin-left: 3px;
+}
+
+.rate_numbers {
+    font-family: "Poppins";
+    color: rgb(145, 145, 145);
+    font-size: 13pt;
+    margin-left: 10px;
+}

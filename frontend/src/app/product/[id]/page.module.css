@@ -1,0 +1,387 @@
+.container {
+    min-height: 100vh;
+    width: 90%;
+    margin: auto;
+}
+
+.parent {
+    min-height: 100vh;
+    position: relative;
+}
+
+.product_div {
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.left_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.left_div img {
+    max-width: 400px;
+    min-width: none;
+}
+
+.icons {
+    font-family: "Poppins";
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i {
+    color: var(--gray-color);
+    padding-right: 15px;
+    font-size: 30pt;
+}
+
+.icons h3 {
+    font-size: 9pt;
+    font-weight: 800;
+}
+
+.icons .icons_div {
+    display: flex;
+    margin-right: 30px;
+}
+
+.icons .icons_div div {
+    font-size: 10pt;
+}
+
+
+.right_div {
+    height: 100%;
+}
+
+.right_div h2{
+    margin-top: 10pt;
+    font-size: clamp(12pt, 2vw, 18pt);
+}
+
+.right_div h1{
+    color: var(--main-color);
+    margin-top: 30px;
+    font-size: clamp(20pt, 3vw, 30pt);
+}
+
+.product_info p {
+    margin-top: 15px;
+}
+
+.product_info {
+    margin-top: 40px;
+}
+
+.product_info strong {
+    display: inline-block;
+    width: clamp(50px, 150px, 250px);
+    font-size: clamp(10pt, 2vw, 15pt);
+}
+
+.product_info span {
+    display: inline-block;
+    margin-left: clamp(10px, 80px, 100px);
+    color: gray;
+    font-size: clamp(8pt, 3vw, 14pt);
+}
+
+.buy_now {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.buy_button {
+    display: flex;
+    align-items: center;
+}
+
+.buy_button i {
+    cursor: pointer;
+    font-size: 18pt;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    border-radius: 10px;
+    margin-left: 20px;
+    transition: 0.2s;
+}
+
+.buy_button i:hover {
+    background-color: var(--main-color);
+    color: white;
+    transition: 0.2s;
+}
+
+.buy_now button {
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    width: clamp(100px, 20vw, 200px);
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: white;
+    font-family: "Poppins";
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.buy_quantity {
+    display: flex;
+}
+
+.buy_quantity i{
+    border-radius: 10px;
+    transition: 0.2s;
+    color: rgb(94, 94, 94);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.buy_quantity i:hover {
+    transition: 0.2s;
+    background-color: var(--gray-color);
+}
+
+.buy_quantity i:first-child {
+    margin-right: clamp(15px, 3vw, 50px);
+}
+
+.buy_quantity i:last-child {
+    margin-left: clamp(15px, 3vw, 50px);
+}
+
+.quantity {
+    text-align: center;
+    width: 30px;
+    font-size: 20pt;
+    font-weight: 700;
+}
+
+.specfications {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.specfications .headers{
+    display: flex;
+    margin-right: 20px;
+}
+
+.specfications h3 {
+    font-size: clamp(12pt, 3vw, 17pt);
+    cursor: pointer;
+    font-family: "Poppins";
+    padding: 3px;
+    margin-right: 50px;
+    width: max-content;
+    margin-bottom: 30px;
+}
+
+.review_div {
+    display: flex;
+}
+
+.review {
+    margin: 80px 0;
+}
+
+.review h2 {
+    margin-bottom: 30px;
+}
+
+.review_comments_section {
+    width: 100%;
+    margin-left: 100px;
+}
+
+.textarea_div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(200px + 80px);
+    width: 500px;
+}
+
+.image_icon {
+    cursor: pointer;
+    padding: 20px;
+    position: absolute;
+    bottom: 75px;
+    left: 0px;
+    color: gray;
+    font-size: 20pt;
+}
+
+.textarea_div .review_rate {
+    display: flex;
+    align-items: center;
+}
+
+.textarea_div .review_rate p {
+    font-family: "Poppins";
+    font-size: 13pt;
+    color: rgb(82, 82, 82);
+    margin-right: 10px;
+}
+
+.textarea_div button {
+    background-color: var(--main-color);
+    width: 40%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15pt;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.review_comments_section textarea {
+    max-width: 300px;
+    max-height: 200px;
+    min-height: 200px;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--gray-color);
+}
+
+
+.customer_reviews {
+    transition: 0.3s ease-in;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 50px;
+    border: 1px solid var(--gray-color);
+}
+
+.more_reviews {
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.more_reviews p {
+    text-decoration: underline;
+    font-size: 12pt;
+    color: gray;
+}
+
+.more_reviews i {
+    font-size: 10pt;
+    margin-left: 10px;
+    color: var(--main-color);
+}
+
+.product_info .product_seller {
+    color: var(--main-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.image_input {
+    display: none;
+    visibility: hidden;
+}
+
+
+.price_div {
+    display: flex;
+    align-items: center;
+}
+
+.price_div p {
+    font-size: 15pt;
+    margin-left: 50px;
+    color: gray;
+    font-weight: 700;
+    text-decoration: line-through;
+}
+
+
+@media (max-width: 850px) {
+    .review_div {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .review_comments_section {
+        margin-left: 0;
+    }
+
+    .textarea_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .review_comments_section textarea {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .product_info span {
+        margin-left: 0;
+    }
+    .product_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left_div img {
+        width: 200px;
+    }
+
+    .icons i {
+        font-size: 15pt;
+        padding-right: 5px;
+    }
+    .icons .icons_div h3 {
+        font-size: 8pt;
+    }
+    .icons .icons_div p {
+        font-size: 7pt;
+    }
+    .icons .icons_div {
+        justify-content: center;
+        margin-right: 15px;
+    }
+
+    .overlay_div {
+        height: calc(100% + 731px);
+    }
+
+    .image_icon {
+        bottom: 40px;
+        left: 0px;
+    }
+}

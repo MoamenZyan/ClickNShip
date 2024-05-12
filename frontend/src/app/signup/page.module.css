@@ -1,0 +1,142 @@
+.container {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_div {
+    margin: 30px 0px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 50px;
+    width: 500px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid var(--gray-color);
+}
+
+.form_div h1 {
+    font-family: 'Poppins';
+    color: var(--main-color);
+}
+
+.form_div form {
+    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form_div form label {
+    font-size: 11pt;
+    color: #333;
+}
+
+.profile_photo {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_photo p {
+    text-align: center;
+    font-size: 11pt;
+    color: #333;
+    font-family: "Poppins";
+    margin-bottom: 15px;
+}
+
+.profile_photo input[type="file"] {
+    display: none;
+}
+.profile_photo span i {
+    font-size: 80pt;
+}
+.profile_photo span {
+    background-color: var(--gray-color);
+    border: none;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 80px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.profile_photo img {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.profile_photo img:hover {
+    transition: 0.2s;
+    filter: brightness(0.8);
+}
+
+.profile_photo span:hover {
+    transition: 0.2s;
+    background-color: #8f8f8f;
+}
+
+
+.forgot {
+    font-family: 'Poppins';
+    margin-top: 20px;
+    cursor: pointer;
+    color: #666;
+    font-size: 11pt;
+    margin-left: auto;
+    transition: 0.2s;
+}
+
+.forgot:hover {
+    transition: 0.1s;
+    color: var(--main-color);
+}
+
+.form_div p:last-child {
+    margin-top: 30px;
+    font-family: 'Poppins';
+    color: #666;
+    font-size: 13pt;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 9;
+}
+
+/* Screens */
+
+
+@media (max-width: 450px) {
+    .form_div {
+        padding: 20px 20px;
+    }
+}

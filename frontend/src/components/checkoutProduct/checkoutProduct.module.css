@@ -1,0 +1,22 @@
+.product_div {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.product_div h4 {
+    cursor: pointer;
+    color: gray;
+    font-size: 10pt;
+    width: 50%;
+}
+
+.product_div h4:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.product_div p {
+    font-weight: 500;
+}

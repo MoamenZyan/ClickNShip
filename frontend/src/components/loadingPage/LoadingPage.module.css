@@ -1,0 +1,19 @@
+.loading {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loading h1 {
+    color: black;
+}
+
+.loading h1 span {
+    color: var(--main-color);
+}
+
+.loading h3 {
+    margin-top: 10px;
+    color: var(--main-color);
+}

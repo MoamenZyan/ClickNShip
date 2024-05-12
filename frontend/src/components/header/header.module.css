@@ -1,0 +1,262 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+
+.header {
+    border-bottom: 1px solid var(--gray-color);
+}
+
+
+.header .userinfo_header {
+    padding: 15px 0px;
+    border-bottom: 1px solid var(--gray-color);
+    display: flex;
+    justify-content: space-around;
+}
+
+.userinfo_header i{
+    padding: 0px 10px 0px 0px;
+    font-size: 12pt;
+    color: var(--main-color);
+}
+
+.userinfo_header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-right: 1px solid var(--gray-color);
+}
+
+.userinfo_header .last_div {
+    border-right: none;
+}
+
+.userinfo_header div p {
+    font-size: 11pt;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+.header .main_header {
+    color: var(--black-color);
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo span {
+    color: var(--main-color);
+}
+
+.header .main_header .user_account_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.header .main_header .user_account_section .user_account {
+    border-left: 1px solid var(--gray-color);
+    cursor: pointer;
+}
+
+.header .main_header .user_account_section .user_cart {
+    cursor: pointer;
+}
+
+.header .main_header h1 {
+    font-size: clamp(10pt, 20pt, 25pt);
+}
+
+.header .main_header {
+    margin: 0px 20px;
+    padding: 0;
+}
+
+
+.header .main_header h3{
+    color: rgb(113, 113, 113);
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+.header .main_header h3 span{
+    color: var(--black-color);
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+.header .main_header div i{
+    color: var(--main-color);
+}
+
+#user_cart_icon {
+    font-size: 25pt;
+    padding-right: 25px;
+}
+
+#user_account_icon {
+    padding-right: 20px;
+    font-size: 25pt;
+}
+
+.search_bar input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.search_bar input::placeholder{
+    font-size: 10pt;
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--gray-color);
+    height: 50px;
+    border-radius: 10px;
+    width: 40vw;
+    padding: 0 20px;
+}
+
+.user_cart {
+    position: relative;
+}
+
+.cart_count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    color: white;
+    font-size: 12pt;
+    width: 22px;
+    height: 22px;
+    border-radius: 50px;
+    background-color: red;
+}
+
+.header_elem {
+    padding: 0 20px;
+    display: flex;
+}
+
+.search_section {
+    margin-right: 40px;
+    position: relative;
+    width: 100%;
+}
+
+.profile_button {
+    text-decoration: none;
+}
+
+.user_account img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 100px;
+}
+
+.profile_list {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+}
+
+@media (min-width: 800px) and (max-width: 1250px) {
+    .cart_count {
+        width: 19px;
+        height: 19px;
+        font-size: 10pt;
+        top: 0;
+        left: 40px;
+    }
+    #user_cart_icon {
+        font-size: 18pt;
+    }
+
+    .header_elem {
+        align-items: center;
+    }
+    
+    #user_account_icon {
+        font-size: 18pt;
+    }
+    .main_header {
+        flex-direction: column;
+    }
+    .header .main_header .user_account_section {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .header .userinfo_header {
+        display: none;
+    }
+    .cart_count {
+        width: 19px;
+        height: 19px;
+        font-size: 10pt;
+        top: 0;
+        left: 40px;
+    }
+    .header .main_header .user_account_section h3 {
+        font-size: 10pt;
+    }
+    .header .main_header .user_account_section span {
+        font-size: 11pt;
+    }
+    #user_cart_icon {
+        font-size: 18pt;
+    }
+
+    .header_elem {
+        align-items: center;
+    }
+    
+    #user_account_icon {
+        font-size: 18pt;
+    }
+    .main_header {
+        flex-direction: column;
+    }
+    .header .main_header .user_account_section {
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .search_bar {
+        margin-top: 10px;
+        /* margin: 0 auto; */
+        width: 100%;
+        height: 40px;
+    }
+    .search_section {
+        margin: 0;
+    }
+}

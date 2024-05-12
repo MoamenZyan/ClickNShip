@@ -1,0 +1,195 @@
+
+.nav_bar {
+    position: relative;
+    background-color: var(--main-color);
+}
+
+.nav_bar .nav_button_div {
+    font-size: clamp(7pt, 11pt, 13pt);
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_bar .parent {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.nav_bar .nav_button {
+    padding: 20px 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav_bar .nav_button:hover {
+    transition: 0.2s;
+    background-color: #f88775;
+}
+
+.nav_bar .nav_button i {
+    padding: 0px 10px;
+}
+
+.categories_button {
+    position: relative;
+}
+
+.category_list {
+    display: flex;
+    flex-direction: column;
+    z-index: 600;
+    top: 57px;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    width: 25%;
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 300px;
+    border: 1px solid var(--gray-color);
+}
+
+.category_list .categories, .price, .brands {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.category_list .tap_header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.category_list .tap_header h2 {
+    color: black;
+    font-weight: 500;
+    font-family: "Poppins";
+    font-size: 16pt;
+}
+
+.category_list .tap_header i{
+    margin-left: 10px;
+    color: var(--main-color);
+    font-size: 10pt;
+}
+
+.category_list {
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.category_list label{
+    margin-left: 25px;
+    cursor: pointer;
+    color: black;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 10pt;
+}
+
+.category_list label::after {
+    margin-right: 50px;
+    content: "";
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 15px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--gray-color);
+    background-color: white;
+    border-radius: 2px;
+}
+
+.category_list input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    position: absolute;
+    visibility: hidden;
+    color: var(--main-color);
+}
+
+.category_list input[type="checkbox"]:checked + label:after {
+    background-color: var(--main-color);
+  }
+
+.category_list input[type="checkbox"]:checked + label {
+    font-weight: 500;
+}
+
+
+.brands_count {
+    font-family: "Poppins";
+    color: rgb(94, 94, 94);
+    font-size: 12pt;
+}
+
+.price_fields div{
+    padding-bottom: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.price_fields input[type="text"] {
+    outline: none;
+    border: 1px solid var(--gray-color);
+    padding: 10px;
+    margin: 0 10px;
+    width: 100%;
+}
+
+.price_fields input[type="range"] {
+    outline: none;
+    margin: 0 10px;
+    width: 100%;
+}
+
+@Media (min-width: 600px) and (max-width: 1000px) {
+    .nav_bar div {
+        margin: 0;
+    }
+    .nav_bar .nav_button {
+        padding: 10px 0;
+        margin: 5px;
+    }
+    .category_list {
+        top: 47px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav_bar { 
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .nav_bar .nav_button_div {
+        justify-content: center;
+        font-size: 2.1vw;
+    }
+    .nav_bar div {
+        margin: 0;
+    }
+    .nav_bar .nav_button {
+        padding: 10px 0;
+        margin: 5px;
+    }
+    .category_list {
+        top: 45px;
+    }
+}
+
+@media (max-width: 400px) {
+    .category_list {
+        top: 40px;
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "/home/moamenzyan/E-Commerce/wwwroot/authentication/login.css",
+      "PackagePath": "staticwebassets/authentication/login.css"
+    },
+    {
+      "Id": "/home/moamenzyan/E-Commerce/wwwroot/authentication/login.js",
+      "PackagePath": "staticwebassets/authentication/login.js"
+    },
+    {
+      "Id": "/home/moamenzyan/E-Commerce/wwwroot/authentication/signup.css",
+      "PackagePath": "staticwebassets/authentication/signup.css"
+    },
+    {
+      "Id": "/home/moamenzyan/E-Commerce/wwwroot/authentication/signup.js",
+      "PackagePath": "staticwebassets/authentication/signup.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.E-Commerce.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.E-Commerce.props",
+      "PackagePath": "build\\E-Commerce.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.E-Commerce.props",
+      "PackagePath": "buildMultiTargeting\\E-Commerce.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.E-Commerce.props",
+      "PackagePath": "buildTransitive\\E-Commerce.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,249 @@
+.container {
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content h2 {
+    text-align: center;
+    font-family: "Poppins";
+    margin-top: 30px;
+}
+
+.top_links {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top_links p {
+    cursor: pointer;
+    font-family: "Poppins";
+    margin: 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.form_div h3 {
+    font-family: "Poppins";
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.country {
+    display: flex;
+    flex-direction: column;
+}
+.country label {
+    margin-bottom: 15px;
+}
+
+.country select {
+    outline: none;
+    border: 1px solid var(--gray-color);
+    font-size: 14pt;
+    padding: 20px 10px;
+}
+
+.flex_div {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 50px;
+}
+
+.right_div {
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgb(222, 222, 222);
+    height: max-content;
+}
+
+.right_div h3 {
+    font-size: 15pt;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+
+.fee {
+    height: max-content;
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-color);
+}
+.fee h4 {
+    color: rgb(98, 98, 98);
+    font-size: 13pt;
+}
+
+.fee p {
+    position: relative;
+    font-weight: 500;
+}
+
+.fee span {
+    cursor: help;
+    position: absolute;
+    font-size: 6pt;
+    margin-left: 5px;
+    top: 15px;
+    color: red;
+    padding: 2px 6px;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+.fee span::after {
+    display: none;
+    visibility: hidden;
+    content: "The shipping fee is not fixed at all it is calculated by the customer destination :)";
+    color: black;
+    font-size: 10pt;
+    position: absolute;
+    padding: 5px;
+    left: -100px;
+    top: -70px;
+    width: 200px;
+    height: 50px;
+    background-color: #ddd;
+
+}
+
+.fee span::before {
+    display: none;
+    visibility: hidden;
+    content: "";
+    position: absolute;
+    border-color: #ddd transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px;
+    top: -13px;
+    left: -4px;
+    z-index: 1000;
+}
+
+.fee:hover span::before,
+.fee:hover span::after {
+    display: block;
+    visibility: visible;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.total h4 {
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+.total p {
+    font-weight: 500;
+}
+
+.button {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.button button {
+    cursor: pointer;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 20pt;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.products_to_watch {
+    margin-top: 30px;
+}
+
+.products_to_watch h4 {
+    font-weight: 500;
+    font-family: "Poppins";
+    font-size: 20pt;
+    margin-bottom: 30px;
+}
+
+.anotherProducts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+.payment_grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 50px;
+}
+
+.payment label {
+    font-family: "Poppins";
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.payment i {
+    cursor: pointer;
+    font-size: 22pt;
+    margin-left: 10pt;
+}
+
+.payment_grid div {
+    display: flex;
+    align-items: center;
+}
+.payment input {
+    width: 18px;
+    height: 18px;
+}
+
+.card {
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+
+.card .stripe_element {
+    margin-top: 30px;
+}
+
+
+@media (min-width: 999px){
+    .flex_div {
+        grid-template-columns: 65% 1fr;
+    }
+    .form {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .top_links p {
+        font-size: 12pt;
+    }
+}

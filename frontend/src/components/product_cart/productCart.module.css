@@ -1,0 +1,172 @@
+.product_div {
+    padding: 20px 20px 20px 20px;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.product_name{
+    text-align: left;
+}
+
+.product_div h4 {
+    cursor: pointer;
+    font-size: 13pt;
+    font-family: "Poppins";
+    font-weight: 600;
+    max-width: 90%;
+    color: rgb(54, 54, 54);
+}
+
+.product_div h4:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.product_div p {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 10pt;
+}
+
+.quantity {
+    text-align: center;
+}
+
+.product_div .photo_div {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.product_div img {
+    height: 100px;
+    max-width: 100%;
+}
+
+
+.product_info {
+    display: flex;
+}
+
+.product_header {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.product_header span {
+    color: green;
+    margin-top: 5pt;
+    font-size: 9pt;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.product_header p {
+    font-family: "Poppins";
+    font-weight: 400;
+    color: rgb(54, 54, 54);
+}
+
+.crud {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.crud p {
+    cursor: pointer;
+    color: var(--main-color);
+    margin: 0 10px;
+}
+
+.crud p:hover {
+    text-decoration: underline;
+}
+
+.middle {
+    border-left: 1px solid var(--gray-color);
+    border-right: 1px solid var(--gray-color);
+}
+
+.select {
+    outline: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.price p{
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 14pt;
+}
+.share_button {
+    position: relative;
+}
+.share_button::after {
+    display: none;
+    text-align: center;
+    content: "copied !";
+    padding: 5px 0;
+    width: 100px;
+    height: max-content;
+    border-radius: 3px;
+    background-color: rgb(229, 229, 229);
+    color: black;
+    position: absolute;
+    top: -40px;
+    transform: translateX(-50%);
+    font-family: "Poppins";
+    left: 50%;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.share_button::before {
+    display: none;
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(229, 229, 229) transparent transparent transparent;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.beforePrice {
+    text-align: center;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.share_div:active .share_button::before,
+.share_div:active .share_button::after {
+    display: block;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+@media (max-width: 650px) {
+
+    .photo_div {
+        width: 150px;
+    }
+
+    .product_info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product_div h4 {
+        font-size: 10pt;
+        margin: 10px 0;
+        width: 100%;
+    }
+}

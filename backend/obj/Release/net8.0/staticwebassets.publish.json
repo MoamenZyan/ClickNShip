@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "JMb9u1jUZ88oz9xxRw0Zp4mQPuY5dkKwx3yAJMMJJtI=",
+  "Source": "E-Commerce",
+  "BasePath": "_content/E-Commerce",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "E-Commerce/wwwroot",
+      "Source": "E-Commerce",
+      "ContentRoot": "/home/moamenzyan/E-Commerce/e-commerce-backend/wwwroot/",
+      "BasePath": "_content/E-Commerce",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

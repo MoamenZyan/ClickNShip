@@ -1,0 +1,19 @@
+
+.mobile {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mobile div p {
+    text-transform: uppercase;
+    font-family: "poppins";
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+    .mobile {
+        flex-direction: column;
+    }
+}

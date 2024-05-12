@@ -1,0 +1,204 @@
+.container {
+    min-height: 100vh;
+    margin: auto;
+}
+
+.right_div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20pt;
+}
+
+.user_photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+}
+
+.user_photo label {
+    margin-bottom: 20px;
+}
+
+.user_photo img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.user_photo h2 {
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.user_photo h3 {
+    font-weight: 500;
+    font-size: 15pt;
+    margin-bottom: 10px;
+}
+
+.user_photo h3 i {
+    color: rgb(255, 179, 0);
+}
+
+.user_photo h2:hover {
+    background-color: rgb(212, 212, 212);
+    cursor: default;
+}
+
+.user_photo p {
+    color: rgb(79, 79, 79);
+    font-family: "Poppins";
+}
+
+.user_info {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.taps {
+    display: flex;
+    margin: 40px 0px 60px 0px;
+    justify-content: center;
+}
+
+.taps div {
+    cursor: pointer;
+    margin: 0 20px;
+    font-family: "Poppins";
+    font-weight: 500;
+    padding: 0px 5px;
+}
+.taps div i {
+    font-size: 12pt;
+    margin-right: 10px;
+}
+
+.user_products_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.products_div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 50px;
+}
+
+.no_products {
+    color: gray;
+    font-size: 12pt;
+}
+
+.load_products {
+    margin-right: auto;
+    font-weight: 700;
+    text-decoration: underline;
+    color: var(--main-color);
+    cursor: pointer;
+    font-size: 13pt;
+    border: none;
+    outline: none;
+}
+
+.load_products:disabled {
+    color: gray;
+}
+
+.logout_button {
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    width: 60%;
+    font-size: 15pt;
+    color: white;
+    font-family: "Poppins";
+}
+
+.edit_profile {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(1fr));
+    gap: 40px;
+}
+
+.edit_profile button {
+    cursor: pointer;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    font-family: "Poppins";
+    color: white;
+    font-weight: 700;
+}
+
+@media (min-width: 999px) {
+    .right_div {
+        grid-template-columns: 25% 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .taps {
+        display: flex;
+        margin: 20px 0px 60px 0px;
+        justify-content: center;
+    }
+    
+    .taps div {
+        cursor: pointer;
+        margin: 0 5px;
+        font-family: "Poppins";
+        font-weight: 500;
+        padding: 0px 5px;
+    }
+
+    .taps p {
+        text-align: center;
+        font-size: 10pt;
+    }
+
+    .taps div i {
+        font-size: 8pt;
+        margin-right: 10px;
+    }
+
+    .user_photo h2 {
+        font-size: 18pt;
+    }
+    .user_photo p {
+        font-size: 13pt;
+    }
+
+    .user_photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .user_photo {
+        margin: auto;
+    }
+    .edit_profile button {
+        width: 100%;
+    }
+}

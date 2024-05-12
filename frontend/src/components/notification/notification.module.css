@@ -1,0 +1,40 @@
+.notification {
+    display: flex;
+    align-items: center;
+    font-family: "Poppins";
+    position: fixed;
+    top: 20px;
+    width: max-content;
+    font-size: 11pt;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 158, 0);
+    color: white;
+    padding: 10px;
+    left: -10000px;
+    z-index: 200;
+    transition: 1s ease;
+    animation: wiggle 3s ease-in-out infinite alternate;
+}
+
+.notification i {
+    margin-right: 10px;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translateX(-5px); /* Move slightly to the left */
+    }
+    25% {
+        transform: translateX(5px); /* Move to the right */
+    }
+    50% {
+        transform: translateX(-5px); /* Move back to the left */
+    }
+    75% {
+        transform: translateX(5px); /* Move to the right */
+    }
+    100% {
+        transform: translateX(0); /* Return to the original position */
+    }
+}

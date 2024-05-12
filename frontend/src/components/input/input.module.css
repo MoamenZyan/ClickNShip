@@ -1,0 +1,71 @@
+.input_wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.input_wrapper input{
+    outline: none;
+    width: 100%;
+    padding: 15px 10px 15px 0px;
+    border: none;
+}
+
+.input_wrapper label {
+    font-size: 11pt;
+    color: #333;
+}
+
+.input_wrapper input::placeholder{
+    color: #a5a5a5;
+}
+
+.input_wrapper .border::before{
+    content: "";
+    left: 0;
+    bottom: -2px;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #7f7f7f;
+    transition: 0.4s ease-out;
+}
+
+.input_wrapper input:focus::placeholder {
+    color: transparent;
+}
+
+.input_wrapper input:focus + .border::before,
+.input_wrapper input:not(:placeholder-shown) + .border::before {
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+
+.input_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_div i{
+    width: 40px;
+    padding: 0px 10px;
+    font-size: 11pt;
+    color:#adadad;
+}
+
+.input_wrapper input:focus + .input_div i,
+.input_wrapper input:focus-within + .input_div i {
+    color: red;
+}
+
+/* Screens */
+
+
+@media (max-width: 450px) {
+    .input_wrapper input::placeholder{
+        font-size: 10pt;
+    }
+}

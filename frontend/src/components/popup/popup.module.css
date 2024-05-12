@@ -1,0 +1,83 @@
+.popup_parent {
+    position: absolute;
+    z-index: 10;
+    height: 45%;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 50px gray;
+    padding: 20px;
+}
+
+.popup_div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.popup_div .close {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    font-size: 20pt;
+    transition: 0.2s;
+    color: var(--main-color);
+}
+
+.popup_parent h1 {
+    color: var(--main-color);
+    font-size: 20pt;
+    font-family: "Poppins";
+}
+
+.popup_parent form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.popup_parent p {
+    color: rgb(96, 96, 96);
+    margin-top: 20px;
+    font-size: 11pt;
+    text-align: center;
+}
+
+.popup_parent p span {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    .popup_parent {
+        width: 90%;
+    }
+
+    .popup_div h1 {
+        font-size: 13pt;
+    }
+
+    .popup_div p {
+        font-size: 9pt;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 950px) {
+    .popup_parent {
+        width: 55%;
+    }
+}
+
+

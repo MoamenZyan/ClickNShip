@@ -1,0 +1,157 @@
+.container {
+    min-height: 100vh;
+    width: 90%;
+    margin: auto;
+}
+
+.container h3 {
+    margin-top: 20px;
+    font-weight: 500;
+    font-family: "Poppins";
+    margin-bottom: 25px;
+    font-size: 20pt;
+}
+
+.grid_div {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 72% 22%;
+    gap: 50px;
+}
+
+.mobile_banner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    gap: 20px;
+}
+
+.mobile_banner .slogan {
+    margin: auto;
+}
+
+.mobile_banner .image_div{
+    background: url("../../assets/mobiles.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.mobile_banner h2 {
+    font-size: 25pt;
+    font-family: "Poppins";
+    margin-bottom: 10px;
+}
+
+.mobile_banner p {
+    color: gray;
+    font-size: 13pt;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mobile_banner button {
+    font-family: "Poppins";
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 700;
+    padding: 10px 0;
+    width: 35%;
+}
+
+.anotherProducts h4 {
+    font-family: "Poppins";
+    font-weight: 500;
+    margin: 0px 0 10px 0;
+}
+.anotherProducts {
+    position: relative;
+    max-width: 300px;
+}
+
+.another_products_div div:first-child {
+    margin-bottom: 10;
+}
+
+.prev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    border: none;
+    outline: none;
+    color: white;
+    left: -10px;
+    font-weight: 800;
+    width: 40px;
+    height: 40px;
+}
+
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+}
+
+.show_more {
+    color: var(--main-color);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 11pt;
+    margin-left: 20px;
+    font-weight: 700;
+    max-width: max-content;
+}
+
+.no_favorite {
+    text-align: center;
+    margin-top: 50px;
+    color: gray;
+}
+
+.another_products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width:1000px) {
+    .grid_div {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .mobile_banner {
+        grid-template-columns: 100%;
+    }
+
+    .mobile_banner .image_div{
+        height: 350px;
+    }
+}

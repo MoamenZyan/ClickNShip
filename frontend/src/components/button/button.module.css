@@ -1,0 +1,15 @@
+
+.button {
+    background-color: var(--main-color);
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-size: 15pt;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}

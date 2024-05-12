@@ -1,0 +1,41 @@
+
+.error {
+    padding: 0 10px;
+    font-size: 9pt;
+    color: red;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: max-content;
+    border: 1px solid red;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+.error:last-of-type i {
+    padding: 0;
+    padding-left: 10px;
+    width: max-content;
+    font-size: 12pt;
+    color: red;
+    margin-left: auto;
+}
+
+
+
+/*  Screens  */
+
+@media (max-width: 450px) {
+    .error {
+        padding: 3px;
+        width: max-content;
+        font-size: 11px;
+    }
+
+    .error:last-of-type i {
+        font-size: 8pt;
+    }
+}

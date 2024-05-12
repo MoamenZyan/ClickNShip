@@ -1,0 +1,102 @@
+.container {
+    min-height: 100vh;
+    width: 90%;
+    margin: auto;
+}
+
+.grid_div {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    gap: 50px;
+    margin-top: 30px;
+}
+.order_div h3 {
+    font-weight: 500;
+    font-family: "Poppins";
+    margin-bottom: 25px;
+    font-size: 20pt;
+}
+
+.order_div .no_orders {
+    color: gray;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.mobile_banner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.mobile_banner .slogan {
+    margin: auto;
+}
+
+.mobile_banner .image_div{
+    background: url("../../assets/mobiles.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.mobile_banner h2 {
+    font-size: 25pt;
+    font-family: "Poppins";
+    margin-bottom: 10px;
+}
+
+.mobile_banner p {
+    color: gray;
+    font-size: 13pt;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mobile_banner button {
+    font-family: "Poppins";
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 700;
+    padding: 10px 0;
+    width: 35%;
+}
+
+.another_products {
+    margin-top: 50px;
+}
+
+.another_products h3 {
+    font-weight: 500;
+    font-family: "Poppins";
+    margin-bottom: 25px;
+    font-size: 20pt;
+}
+.another_products_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 1000px) {
+    .grid_div {
+        grid-template-columns: 1fr;
+    }
+
+    .mobile_banner .image_div{
+        background: url("../../assets/mobiles.jpg") no-repeat center;
+        background-size: cover;
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+}

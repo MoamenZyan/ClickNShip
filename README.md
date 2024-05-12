@@ -1,22 +1,36 @@
-# ClickNShip
-![Screenshot 2024-05-12 132448](https://github.com/MoamenZyan/ClickNShip/assets/114372355/a87cf506-3e91-4844-a223-9fdfce83e2fe)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This E-Commerce website is a culmination of my experience with the latest technologies.
+## Getting Started
 
-## Technologies I Used:
-- Back-End:
-  - ASP DOTNET Core (Backend)
-  - MySQL (Database)
-- Front-End:
-  - Next.js (React)
-  - TypeScript
-- Devops:
-   - Docker (Containerization)
-   - AWS (Cloud)
-- Development Platform:
-   - Linux
+First, run the development server:
 
-## Summery
-It was an unforgettable experience, orchestrating everything to harmonize seamlessly! Moreover, it marked our debut with two technologies: C# .NET and React. It's my inaugural venture into utilizing .NET as a backend, and diving into Next.js as a frontend web framework.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Admittedly, the website may appear clunky and occasionally suffer from bugs and sluggishness, but this is merely the beginning. Along the journey, I'll grasp the best practices and refine our approach to achieve a more professional outcome.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
